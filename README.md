@@ -13,6 +13,8 @@ Form a team of 2 members:
 
 Create a new Python project:
 
+decided on a simple python project
+
     
 
 Initialise a Git repository for the project:

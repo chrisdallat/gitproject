@@ -31,19 +31,40 @@ class Patron:
     def __repr__(self):
         return self.name
 
-   def checkout(self, book):
+    def checkout(self, book):
         if book.checkout(self):
             self.checked_out_books.append(book)
             return True
         else:
             return False
    
-   def checkin(self, book):
+    def checkin(self, book):
         if book.checkin():
             self.checked_out_books.remove(book)
             return True
         else:
             return False
+
+class Library:
+    def __init__(self, books, patrons):
+        self.books = books
+        self.patrons = patrons
+
+    def display_books(self):
+        for book in self.books:
+            if book.checked_out_by is None:
+                print(book)
+
+    def display_patrons(self):
+        for patron in self.patrons:
+            print(patron)
+
+    def search_books(self, search_string):
+        matching_books = []
+        for book in self.books:
+            if search_string.lower() in book.title.lower() or search_string.lower() in book.author.lower():
+                matching_books.append(book)
+        return matching_books
 
 def main():
    print("Hello from main!")

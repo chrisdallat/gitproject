@@ -23,8 +23,16 @@ class Book:
         else:
             return False
         
+class Patron:
+    def __init__(self, name):
+        self.name = name
+        self.checked_out_books = []
+
+    def __repr__(self):
+        return self.name
+
 def main():
    print("Hello from main!")
 
-if __name___ == "__main__":
+if __name__ == "__main__":
    main()

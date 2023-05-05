@@ -1,48 +1,31 @@
 ## gitproject
 
-Overview:
+### Overview:
 
 In this assignment, you will learn advanced concepts in Git version control system. You will be working with a small team to develop a Python project using Git. You will be practicing Git workflows, branching strategies, and conflict resolution techniques.
 
-Instructions:
-
-Form a team of 2 members:
+## Instructions:
+### Form a team of 2 members:
 
     Chris Dallat
     Khalil Masree
 
-Create a new Python project:
+### Create a new Python project
 
-decided on a simple python project
+    We decided on a simple python project for a library system, with books and customers/patrons.
 
+### Initialise a Git repository for the project:
+
+    We initialised a git project on github.com/chrisdallat/gitproject
+
+### Develop a feature branch strategy for the project:
+
+    We decided to make branches based on each class that we implemented, so we had a branch for Book, Patron and Library.
     
+    First we cloned onto both our computers so we were working on the same project. Then
+    we added basic file main.py and added a main() and pushed it to the main/master branch. Then we added a branch of book without pulling the main we commited the changed that we created for class Book and then we did git pull and git rebase main and resolved relevant conflicts and then created a pull request which the other could review and merge.
 
-Initialise a Git repository for the project:
+    Khalil then built the Patron class with multiple commits to a Patron branch. and created a pull request, I was then able to do Squash & Merge to combine all the commits into one commit before merging. 
 
-    Once you have your project, you need to initialise a Git repository for version control. To do this, navigate to the project directory in your command line and enter the command git init.
+    We then made the final library class on Library branch and then tested the running code combined. and fixed whatever final errors we had in the main and added a couple more methods in Library and merged finally everything to main branch as production code. 
 
-Develop a feature branch strategy for the project:
-
-    Decide on a branching strategy for your project. There are many different strategies you can use, such as Git flow or GitHub flow. You should discuss with your team and choose the best one for your project.
-
-Implement at least three features in separate feature branches:
-
-    Now that you have your branching strategy, create feature branches for each feature you plan to add to your project. Make changes to the code in the feature branches, committing changes frequently.
-
-Merge the feature branches into a release branch:
-
-    Once each feature is complete, merge the feature branches into a release branch. Test the release branch to ensure all features work together correctly.
-
-Resolve any conflicts that arise during the merge process:
-
-    During the merge process, conflicts may arise if two or more team members have made changes to the same code. You need to resolve these conflicts before merging your branches. Follow the instructions in the resources provided above to resolve conflicts.
-
-Implement at least one advanced Git workflow, such as Git rebase or Git cherry-pick, to manage the project history:
-
-    Now that you have a release branch, use Git rebase or Git cherry-p
-
-Submit your Git repository with a README file that explains your branching strategy and Git workflow implementation.
-
- 
-
-All students in the group should submit the assignment.

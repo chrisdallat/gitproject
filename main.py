@@ -37,6 +37,13 @@ class Patron:
             return True
         else:
             return False
+   
+   def checkin(self, book):
+        if book.checkin():
+            self.checked_out_books.remove(book)
+            return True
+        else:
+            return False
 
 def main():
    print("Hello from main!")

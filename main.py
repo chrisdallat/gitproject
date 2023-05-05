@@ -31,6 +31,13 @@ class Patron:
     def __repr__(self):
         return self.name
 
+   def checkout(self, book):
+        if book.checkout(self):
+            self.checked_out_books.append(book)
+            return True
+        else:
+            return False
+
 def main():
    print("Hello from main!")
 
